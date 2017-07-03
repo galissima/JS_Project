@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS</title>
+  
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+var arr=['sustavka1-mag1','sustavka2-mag3','sustavka3-mag1','sustavka4-mag2']
+//var arr=['1','2','3','4']
+var temp;
+var arr2=[];
+
+
+for (var i = 0; i < 200; i++) {
+		var rnd=Math.floor(Math.random()*4);
+		var rnd2=Math.floor(Math.random()*4);
+		
+		temp = arr[rnd2];
+		arr[rnd2]=arr[rnd];
+		arr[rnd] = temp;
+
+
+	if (arr2.includes(arr.join())) {
+
+
+	}
+	else{
+		var furst =arr[0].split('-')
+		var second =arr[1].split('-')
+		var third =arr[2].split('-')
+		var fourth =arr[3].split('-')
+		if (furst[1]!==second[1] && second[1]!==third[1] && third[1]!==fourth[1]){
+			
+			arr2.push(arr.join());
+				
+
+			
+		}
+		else{
+			console.log('kolio')
+		}
+
+
+		
+	}
+}
+
+
+
+
+for (var i = 0; i < 30; i++) {
+	console.log(arr2[i]);
+}
+
+console.log(arr2.length);
+
+</script>
+</body>
+</html>
