@@ -2,61 +2,206 @@
 <html>
 <head>
   <title>JS</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="jquery-3.2.1.min.js"></script>
   
 </head>
 <body>
+<div class="ingr_container">
+<div class="ingr" id="cockroach" style="position:absolute; left: 5px;"><p>размазана хлебарка  <br>пълни стомаси</p></div>
+<div class="ingr" id="tarantula" style="position:absolute; left: 160px;"><p>тарантула  <br>съвестни политици</p></div>
+<div class="ingr" id="teeths" style="position:absolute; left: 315px;"><p>змийски зъби  <br>дълбок сън</p></div>
+<div class="ingr" id="lizzard" style="position:absolute; left: 465px;"><p>петнист гущер  <br>съвестни политици</p></div>
+<div class="ingr" id="snail" style="position:absolute; left: 615px;"><p>пиян охлюв  <br>мир</p></div>
 
-
-
-<script type="text/javascript">
-var arr=['ingredient1-mag1','ingredient2-mag3','ingredient3-mag1','ingredient4-mag2']
-//var arr=['1','2','3','4']
-var temp;
+<div class="ingr" id="eye" style="position:absolute; left: 765px;"><p>крокодилско око  <br>грамотност</p></div>
+<div class="ingr" id="hair" style="position:absolute; left: 915px;"><p>косъм от глиган  <br>пълни стомаси</p></div>
+<div class="ingr" id="apple" style="position:absolute; left: 1065px;"><p>отровна ябълка  <br>мир</p></div>
+<div class="ingr" id="pirana" style="position:absolute; left: 1215px;"><p>пиранска люспа  <br>чиста вода</p></div>
+<div class="ingr" id="scorpio" style="position:absolute; left: 1365px;"><p>скорпион  <br>дълбок сън</p></div>
+</div>
+<button>Изпълни!</button>
+<p id='result'></p>
+<div class="lid"></div>
+<div class ='magic'></div>
+<script type="text/javascript" >
+var print = true;
+var arr = [];
 var arr2=[];
 
+$('.ingr p').click(function (){
 
-for (var i = 0; i < 200; i++) {
-		var rand=Math.floor(Math.random()*4);
-		var rand2=Math.floor(Math.random()*4);
-		
+var element = $(this).text();
+$(this).css('background-color','grey');
+if (arr.includes(element)) {
+}else{arr.push(element);}
+console.log(arr);
+
+$('.ingr').click(function (){
+
+$(this).animate({left: "700px", top: '600px'}, 150);
+
+//$(this).css({"position":"absolute"});
+
+//$(this).css({"top":"600px","left":"49%","position":"absolute","transition": "5s"});
+});
+//var arr=['ingredient1-mag1','ingredient2-mag3','ingredient3-mag1','ingredient4-mag2']
+
+$('button').click(function (){
+
+var temp;
+var el =[];
+
+var myLen = arr.length;
+//console.log(kiko)
+var temp , el1 , el2 , el3 ,el4 , el5;
+var arr2=[];
+
+for (var i = 0; i < myLen*300; i++) {
+		var rand=Math.floor(Math.random()*myLen);
+		var rand2=Math.floor(Math.random()*myLen);
 		temp = arr[rand2];
 		arr[rand2]=arr[rand];
 		arr[rand] = temp;
-
-
-	if (arr2.includes(arr.join())) {
-
-
-	}
+	if (arr2.includes(arr.join())) {}
 	else{
-		var first =arr[0].split('-')
-		var second =arr[1].split('-')
-		var third =arr[2].split('-')
-		var fourth =arr[3].split('-')
-		if (first[1]!==second[1] && second[1]!==third[1] && third[1]!==fourth[1]){
 			
-			arr2.push(arr.join());
-				
 
-			
+		switch(myLen){
+			case 2:
+			 console.log('elements 2');
+			el1 =arr[0].split('  ')
+			el2 =arr[1].split('  ')
+      		  if (el1[1]!==el2[1]){
+		 	arr2.push(arr.join());
+		 }
+        break;
+   			 case 3:
+   			  console.log('elements 3');
+     		el1 =arr[0].split('  ')
+			el2 =arr[1].split('  ')
+			el3 =arr[2].split('  ')
+      		  if (el1[1]!==el2[1] && el2[1]!==el3[1]){
+		 	arr2.push(arr.join());
+		 	}
+        break;
+  			  case 4:
+  			  console.log('elements 4');
+     		el1 =arr[0].split('  ')
+			el2 =arr[1].split('  ')
+			el3 =arr[2].split('  ')
+			el4 =arr[3].split('  ')
+      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1]){
+		 	arr2.push(arr.join());
+		 	}
+        break;
+        		 case 5:
+  			  console.log('elements 5');
+     		el1 =arr[0].split('  ')
+			el2 =arr[1].split('  ')
+			el3 =arr[2].split('  ')
+			el4 =arr[3].split('  ')
+			el5 =arr[4].split('  ')
+      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1] && el4[1]!==el5[1]){
+		 	arr2.push(arr.join());
+		 	}
+        break;
+        		 case 6:
+  			  console.log('elements 6');
+     		el1 =arr[0].split('  ')
+			el2 =arr[1].split('  ')
+			el3 =arr[2].split('  ')
+			el4 =arr[3].split('  ')
+			el5 =arr[4].split('  ')
+			el6 =arr[5].split('  ')
+      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1] && el4[1]!==el5[1] && el5[1]!==el6[1]){
+		 	arr2.push(arr.join());
+		 	}
+        break;
+        		 case 7:
+  			  console.log('elements 7');
+     		el1 =arr[0].split('  ')
+			el2 =arr[1].split('  ')
+			el3 =arr[2].split('  ')
+			el4 =arr[3].split('  ')
+			el5 =arr[4].split('  ')
+			el6 =arr[5].split('  ')
+			el7 =arr[6].split('  ')
+      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1] && el4[1]!==el5[1] && el5[1]!==el6[1]&& el6[1]!==el7[1]){
+		 	arr2.push(arr.join());
+		 	}
+        break;
+        		 case 8:
+  			  console.log('elements 8');
+     		el1 =arr[0].split('  ')
+			el2 =arr[1].split('  ')
+			el3 =arr[2].split('  ')
+			el4 =arr[3].split('  ')
+			el5 =arr[4].split('  ')
+			el6 =arr[5].split('  ')
+			el7 =arr[6].split('  ')
+			el8 =arr[7].split('  ')
+      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1]&& el4[1]!==el5[1] && el5[1]!==el6[1]&& el6[1]!==el7[1]&& el7[1]!==el8[1]){
+		 	arr2.push(arr.join());
+		 	}
+        break;
+        		 case 9:
+  			  console.log('elements 9');
+     		el1 =arr[0].split('  ')
+			el2 =arr[1].split('  ')
+			el3 =arr[2].split('  ')
+			el4 =arr[3].split('  ')
+			el5 =arr[4].split('  ')
+			el6 =arr[5].split('  ')
+			el7 =arr[6].split('  ')
+			el8 =arr[7].split('  ')
+			el9 =arr[8].split('  ')
+      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1]&& el4[1]!==el5[1] && el5[1]!==el6[1]&& el6[1]!==el7[1]&& el7[1]!==el8[1]&& el8[1]!==el9[1]){
+		 	arr2.push(arr.join());
+		 	}
+        break;
+        		 case 10:
+  			  console.log('elements 10');
+     		el1 =arr[0].split('  ')
+			el2 =arr[1].split('  ')
+			el3 =arr[2].split('  ')
+			el4 =arr[3].split('  ')
+			el5 =arr[4].split('  ')
+			el6 =arr[5].split('  ')
+			el7 =arr[6].split('  ')
+			el8 =arr[7].split('  ')
+			el9 =arr[8].split('  ')
+			el10 =arr[9].split('  ')
+      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1]&& el4[1]!==el5[1] && el5[1]!==el6[1]&& el6[1]!==el7[1]&& el7[1]!==el8[1]&& el8[1]!==el9[1]&& el9[1]!==el10[1]){
+		 	arr2.push(arr.join());
+		 	}
+        break;
 		}
-		else{
-			console.log('kolio')
-		}
-
 
 		
+		
+		}
 	}
-}
 
 
 
 
-for (var i = 0; i < 30; i++) {
+
+if (print) {
+	for (var i = 0; i < 30; i++) {
 	console.log(arr2[i]);
 }
+	var len = arr2.length;
+$('#result').text('Ти удължи съществуването на света с ' +len+ ' дни');
+print=false;
+}
 
-console.log(arr2.length);
+});
+});
+
+
+
+	
 
 </script>
 </body>
