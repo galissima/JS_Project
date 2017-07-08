@@ -8,38 +8,47 @@
 </head>
 <body>
 <div class="ingr_container">
-<div class="ingr" id="cockroach" style="position:absolute; left: 5px;"><p>размазана хлебарка  <br>пълни стомаси</p></div>
-<div class="ingr" id="tarantula" style="position:absolute; left: 160px;"><p>тарантула  <br>съвестни политици</p></div>
-<div class="ingr" id="teeths" style="position:absolute; left: 315px;"><p>змийски зъби  <br>дълбок сън</p></div>
-<div class="ingr" id="lizzard" style="position:absolute; left: 465px;"><p>петнист гущер  <br>съвестни политици</p></div>
-<div class="ingr" id="snail" style="position:absolute; left: 615px;"><p>пиян охлюв  <br>мир</p></div>
+<div class="ingr" id="cockroach" style="position:absolute; left: 320px;"><p>размазана хлебарка  <br>пълни стомаси</p></div>
+<div class="ingr" id="tarantula" style="position:absolute; left: 410px; top:100px;"><p>тарантула  <br>съвестни политици</p></div>
+<div class="ingr" id="teeths" style="position:absolute; left: 470px;"><p>змийски зъби  <br>дълбок сън</p></div>
+<div class="ingr" id="lizzard" style="position:absolute; left: 550px;top:100px;"><p>петнист гущер  <br>съвестни политици</p></div>
+<div class="ingr" id="snail" style="position:absolute; left: 640px;"><p>пиян охлюв  <br>мир</p></div>
 
-<div class="ingr" id="eye" style="position:absolute; left: 765px;"><p>крокодилско око  <br>грамотност</p></div>
-<div class="ingr" id="hair" style="position:absolute; left: 915px;"><p>косъм от глиган  <br>пълни стомаси</p></div>
-<div class="ingr" id="apple" style="position:absolute; left: 1065px;"><p>отровна ябълка  <br>мир</p></div>
-<div class="ingr" id="pirana" style="position:absolute; left: 1215px;"><p>пиранска люспа  <br>чиста вода</p></div>
-<div class="ingr" id="scorpio" style="position:absolute; left: 1365px;"><p>скорпион  <br>дълбок сън</p></div>
+<div class="ingr" id="eye" style="position:absolute; left: 700px; top:100px;"><p>крокодилско око  <br>грамотност</p></div>
+<div class="ingr" id="hair" style="position:absolute; left: 780px;"><p>косъм от глиган  <br>пълни стомаси</p></div>
+<div class="ingr" id="apple" style="position:absolute; left: 850px; top:100px;"><p>отровна ябълка  <br>мир</p></div>
+<div class="ingr" id="pirana" style="position:absolute; left: 930px;"><p>пиранска люспа  <br>чиста вода</p></div>
+<div class="ingr" id="scorpio" style="position:absolute; left:990px; top:100px;"><p>скорпион  <br>дълбок сън</p></div>
 </div>
+<audio id="water"><source src="images/water.mp3" type="audio/mp3"></audio>
+<audio id="fire"><source src="images/fire.mp3" type="audio/mp3"></audio>
+
 <button>Изпълни!</button>
-<p id='result'></p>
+<div id='result'></div>
 <div class="lid"></div>
 <div class ='magic'></div>
+<div class ="fire"></div>
+
 <script type="text/javascript" >
 var print = true;
 var arr = [];
 var arr2=[];
+document.getElementById("fire").play(); 
+$('.ingr').click(function (){
+setTimeout(function(){
 
-$('.ingr p').click(function (){
+	document.getElementById("water").play(); 
+ },4000);
 
 var element = $(this).text();
-$(this).css('background-color','grey');
+//$(this).css('background-color','grey');
 if (arr.includes(element)) {
 }else{arr.push(element);}
 console.log(arr);
 
 $('.ingr').click(function (){
 
-$(this).animate({left: "700px", top: '600px'}, 150);
+$(this).animate({left: "690px", top: '490px'}, 150);
 
 //$(this).css({"position":"absolute"});
 
@@ -48,12 +57,13 @@ $(this).animate({left: "700px", top: '600px'}, 150);
 //var arr=['ingredient1-mag1','ingredient2-mag3','ingredient3-mag1','ingredient4-mag2']
 
 $('button').click(function (){
+	
+
 
 var temp;
 var el =[];
 
 var myLen = arr.length;
-//console.log(kiko)
 var temp , el1 , el2 , el3 ,el4 , el5;
 var arr2=[];
 
@@ -196,6 +206,8 @@ $('#result').text('Ти удължи съществуването на свет�
 print=false;
 }
 
+
+$('id').fadeIn(1000);
 });
 });
 

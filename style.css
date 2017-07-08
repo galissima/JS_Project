@@ -1,23 +1,50 @@
+body{
+	
+	background-image:url('images/wood.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
 .ingr_container{
 
 
 }
 p{position: relative;
-	top: 70px;}
+	display: none;
+	top: 0px;}
+.ingr:hover > p{ 
+	display:block;
+font-family: Georgia;
+font-size: 16px;
+color: #fff;
+text-shadow: 2px 2px blue;
+ }
+
 
 .ingr {
 	
-	width: 150px;
-	height:100px;
-	margin: 10px;
+	width: 190px;
+	height:50px;
+	
 	transition: 5s;
 	-moz-transition:5s;
 	-webkit-transition: 5s;
-	text-align:center;
-	padding-top:40px;
+	
 }
 button{
-	margin-top: 50px;
+	    position: relative;
+    top: 200px;
+    background-image: url(images/button.gif);
+    background-size: contain;
+    background-color: rgba(25, 5, 1, 0);
+    right: 0px;
+    width: 150px;
+    color: #5e5568;
+    font-size: 30px;
+    font-weight: bold;
+    height: 50px;
 }
 #cockroach {
 	background-image: url('images/eye.png');
@@ -78,26 +105,91 @@ button{
 }
 
 .magic{
-	width: 475px;
-	height: 300px;
+	width: 280px;
+	height: 150px;
 	background-image: url('images/pan1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
 	position: absolute;
-	top: 600px;
-	left: 37%;
-	z-index: 3;
+	top: 490px;
+	left: 45%;
+	z-index: 5;
 
 }
 
 .lid{
-	width:475px;
-	height:70px;
+	width:240px;
+	height:150px;
 	background-image: url('images/pan2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
 	position: absolute;
-	top: 580px;
-	left: 37%;
-	z-index: -1;
+	top: 480px;
+	left: 45%;
+	z-index: -2;
+}
+.fire{
+    width: 400px;
+    height: 150px;
+    background-image: url(images/fire.gif);
+    background-size: contain;
+    position: absolute;
+    bottom: 0px;
+    left: 530px;
+
 }
 
 
 
+/*first page*/
+h1 ,h2 ,h3{position: relative;
+	margin: auto;
+	display: none;
+	width: 500px;
+	text-shadow:2px 2px 5px red;
+	}
+
+h1{
+	font-size: 70px;
+	
+}
+#story1,#story2,#story3,
+#story4,#story5,#story6{
+	width:500px;
+	text-align:justify;
+	position: relative;
+	top: 120px;
+	left: 430px;
+	font-size:24px;
+	font-family:Georgia;
+	text-shadow:1px 1px blue;
+	font-size:26px;
+
+}
+h2{
+	position:relative;
+	top:100px;
+	left:80px;
+	font-size:26px;
+	text-align:justify;
+}
+h3{
+	position:relative;
+	top:100px;
+	left:0px;
+	font-family:Georgia;
+	font-size:26px;
+	text-align:justify;
+}
+
+#result{
+
+	font-family: Georgia, serif;
+	font-size: 26px;
+	color: #fff;
+	text-shadow: 2px 2px red ;
+	position:relative;
+	top: 270px;
+	left:430px;
+}
 
