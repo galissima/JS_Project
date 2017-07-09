@@ -1,147 +1,16 @@
 body{
 	
-	background-image:url('images/wood.jpg');
+	background-image:url('assets/images/wood.jpg');
 	background-size: cover;
 	background-position: center bottom;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
 
-.ingr_container{
+
+/* FIRST PAGE */
 
 
-}
-p{position: relative;
-	display: none;
-	top: 0px;}
-.ingr:hover > p{ 
-	display:block;
-font-family: Georgia;
-font-size: 16px;
-color: #fff;
-text-shadow: 2px 2px blue;
- }
-
-
-.ingr {
-	
-	width: 190px;
-	height:50px;
-	
-	transition: 5s;
-	-moz-transition:5s;
-	-webkit-transition: 5s;
-	
-}
-button{
-	    position: relative;
-    top: 200px;
-    background-image: url(images/button.gif);
-    background-size: contain;
-    background-color: rgba(25, 5, 1, 0);
-    right: 0px;
-    width: 150px;
-    color: #5e5568;
-    font-size: 30px;
-    font-weight: bold;
-    height: 50px;
-}
-#cockroach {
-	background-image: url('images/eye.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-
-
-}
-#tarantula{
-	background-image: url('images/tarantula.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#pirana{
-	background-image: url('images/piranq.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#eye{
-	background-image: url('images/lizzard.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#apple{
-	background-image: url('images/apple.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#snail{
-	background-image: url('images/unnamed.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#hair{
-	background-image: url('images/gligan.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#cockroach{
-	background-image: url('images/cockroach.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#teeths{
-	background-image: url('images/cobra.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#scorpio{
-	background-image: url('images/scorpio.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#lizzard{
-	background-image: url('images/liz.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-.magic{
-	width: 280px;
-	height: 150px;
-	background-image: url('images/pan1.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 490px;
-	left: 45%;
-	z-index: 5;
-
-}
-
-.lid{
-	width:240px;
-	height:150px;
-	background-image: url('images/pan2.png');
-	background-size: contain;
-	background-repeat: no-repeat;
-	position: absolute;
-	top: 480px;
-	left: 45%;
-	z-index: -2;
-}
-.fire{
-    width: 400px;
-    height: 150px;
-    background-image: url(images/fire.gif);
-    background-size: contain;
-    position: absolute;
-    bottom: 0px;
-    left: 530px;
-
-}
-
-
-
-/*first page*/
 h1 ,h2 ,h3{position: relative;
 	margin: auto;
 	display: none;
@@ -192,4 +61,141 @@ h3{
 	top: 270px;
 	left:430px;
 }
+
+
+
+/* SECOND PAGE*/
+
+
+p{position: relative;
+	display: none;
+	top: 0px;}
+
+.ingr:hover > p{ 
+	display:block;
+font-family: Georgia;
+font-size: 20px;
+text-align:center;
+position:relative;
+left:-60px;
+color: #fff;
+text-shadow: 2px 2px blue;
+ }
+
+
+.ingr {
+	
+	width: 190px;
+	height:50px;
+	transition: 5s;
+	-moz-transition:5s;
+	-webkit-transition: 5s;
+
+}
+button{
+	    position: relative;
+    top: 200px;
+    background-image: url(assets/images/button.gif);
+    background-size: contain;
+    background-color: rgba(25, 5, 1, 0);
+    right: 0px;
+    width: 150px;
+    color: #5e5568;
+    font-size: 30px;
+    font-weight: bold;
+    height: 50px;
+}
+#cockroach {
+	background-image: url('assets/images/eye.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+
+}
+#tarantula{
+	background-image: url('assets/images/tarantula.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#pirana{
+	background-image: url('assets/images/piranq.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#eye{
+	background-image: url('assets/images/lizzard.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#apple{
+	background-image: url('assets/images/apple.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#snail{
+	background-image: url('assets/images/unnamed.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#hair{
+	background-image: url('assets/images/gligan.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#cockroach{
+	background-image: url('assets/images/cockroach.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#teeths{
+	background-image: url('assets/images/cobra.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#scorpio{
+	background-image: url('assets/images/scorpio.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+#lizzard{
+	background-image: url('assets/images/liz.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.magic{
+	width: 280px;
+	height: 150px;
+	background-image: url('assets/images/pan1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 490px;
+	left: 45%;
+	z-index: 5;
+
+}
+
+.lid{
+	width:240px;
+	height:150px;
+	background-image: url('assets/images/pan2.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 480px;
+	left: 45%;
+	z-index: -2;
+}
+.fire{
+    width: 400px;
+    height: 150px;
+    background-image: url(assets/images/fire.gif);
+    background-size: contain;
+    position: absolute;
+    bottom: 0px;
+    left: 530px;
+	z-index: -3;
+}
+
 

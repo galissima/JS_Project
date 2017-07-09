@@ -1,220 +1,84 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>JS</title>
   <link rel="stylesheet" type="text/css" href="style.css">
    <script src="jquery-3.2.1.min.js"></script>
+   <script src="JS/index.js"></script>
   
 </head>
 <body>
-<div class="ingr_container">
-<div class="ingr" id="cockroach" style="position:absolute; left: 320px;"><p>размазана хлебарка  <br>пълни стомаси</p></div>
-<div class="ingr" id="tarantula" style="position:absolute; left: 410px; top:100px;"><p>тарантула  <br>съвестни политици</p></div>
-<div class="ingr" id="teeths" style="position:absolute; left: 470px;"><p>змийски зъби  <br>дълбок сън</p></div>
-<div class="ingr" id="lizzard" style="position:absolute; left: 550px;top:100px;"><p>петнист гущер  <br>съвестни политици</p></div>
-<div class="ingr" id="snail" style="position:absolute; left: 640px;"><p>пиян охлюв  <br>мир</p></div>
+<audio id="sound"><source src="assets/audio/music.mp3" type="audio/mp3"></audio>
 
-<div class="ingr" id="eye" style="position:absolute; left: 700px; top:100px;"><p>крокодилско око  <br>грамотност</p></div>
-<div class="ingr" id="hair" style="position:absolute; left: 780px;"><p>косъм от глиган  <br>пълни стомаси</p></div>
-<div class="ingr" id="apple" style="position:absolute; left: 850px; top:100px;"><p>отровна ябълка  <br>мир</p></div>
-<div class="ingr" id="pirana" style="position:absolute; left: 930px;"><p>пиранска люспа  <br>чиста вода</p></div>
-<div class="ingr" id="scorpio" style="position:absolute; left:990px; top:100px;"><p>скорпион  <br>дълбок сън</p></div>
-</div>
-<audio id="water"><source src="images/water.mp3" type="audio/mp3"></audio>
-<audio id="fire"><source src="images/fire.mp3" type="audio/mp3"></audio>
 
-<button>Изпълни!</button>
-<div id='result'></div>
-<div class="lid"></div>
-<div class ='magic'></div>
-<div class ="fire"></div>
+<h1>THE MADMAN</h1>
+<p id='story1'>Още веднъж ще трябва да се срещнете с изключителни сили, такива, които не сте очаквали. И сега ТОЙ идва, от страшна и луда действителност, която вие не можете да предположите, че същестува. ТОЙ идва да разруши времето и пространството!! (:))
+За късмет, вие не само, че също сте луд, вие също сте и всесилен програмист. Знаете магическа рецепта, която ще защити вашия Свят от извънземната реалност, в която ТОЙ съществува, поне за известно време ….
+</p>
+<h2>Ето как работи рецептата:</h2>
+<p id='story2'>В нея влизат списък от съставки, които трябва да бъдат смесени във вашия магически казан една по една;</p>
+
+<p id='story3'>Всяка съставка е различна, но много от тях са с едно и също магично действие </p>
+
+<p id='story4'>Никога не трябва да добавяте две съставки с едно и също магично действие непосредствено една след друга /искате да предпазите Света, не да го разрушите, нали!?</p>
+
+<p id='story5'>Всеки път, когато използвате рецептата си, предпазвате Света за един ден;</p>
+
+<p id='story6'>Всеки път, когато следвате рецептата и смесвате продуктите в определена последователност, не можете да използвате тази последователност повече</p>
+
+<h3>Като разполагате със списък от съставки за дадена рецепта и тяхното магическо действие, трябва да определите колко дни ще сте в състояние да опазите Света!!!
+</h3>
+
 
 <script type="text/javascript" >
-var print = true;
-var arr = [];
-var arr2=[];
-document.getElementById("fire").play(); 
-$('.ingr').click(function (){
+var temp =0;
+document.getElementById("sound").play(); 
+
+ $(document).ready(function(){
+ 	 $("h1").fadeIn(2000);
+   	 $("#story1").fadeIn(13000);
+   setTimeout(function(){
+      $("#story1").fadeOut(3000);
+      },18000);
+ });
+
 setTimeout(function(){
+   	 $("h2").fadeIn(2000);
+        $("h2").fadeOut(2000);
+ },21000);
 
-	document.getElementById("water").play(); 
- },4000);
+setTimeout(function(){
+   	 $("#story2").fadeIn(3000);
+        $("#story2").fadeOut(3000);
+ },26000);
 
-var element = $(this).text();
-//$(this).css('background-color','grey');
-if (arr.includes(element)) {
-}else{arr.push(element);}
-console.log(arr);
+setTimeout(function(){
+   	 $("#story3").fadeIn(3000);
+        $("#story3").fadeOut(3000);
+ },33000);
 
-$('.ingr').click(function (){
-
-$(this).animate({left: "690px", top: '490px'}, 150);
-
-//$(this).css({"position":"absolute"});
-
-//$(this).css({"top":"600px","left":"49%","position":"absolute","transition": "5s"});
-});
-//var arr=['ingredient1-mag1','ingredient2-mag3','ingredient3-mag1','ingredient4-mag2']
-
-$('button').click(function (){
+setTimeout(function(){
+   	 $("#story4").fadeIn(4000);
+        $("#story4").fadeOut(4000);
+ },40000);
 	
-
-
-var temp;
-var el =[];
-
-var myLen = arr.length;
-var temp , el1 , el2 , el3 ,el4 , el5;
-var arr2=[];
-
-for (var i = 0; i < myLen*300; i++) {
-		var rand=Math.floor(Math.random()*myLen);
-		var rand2=Math.floor(Math.random()*myLen);
-		temp = arr[rand2];
-		arr[rand2]=arr[rand];
-		arr[rand] = temp;
-	if (arr2.includes(arr.join())) {}
-	else{
-			
-
-		switch(myLen){
-			case 2:
-			 console.log('elements 2');
-			el1 =arr[0].split('  ')
-			el2 =arr[1].split('  ')
-      		  if (el1[1]!==el2[1]){
-		 	arr2.push(arr.join());
-		 }
-        break;
-   			 case 3:
-   			  console.log('elements 3');
-     		el1 =arr[0].split('  ')
-			el2 =arr[1].split('  ')
-			el3 =arr[2].split('  ')
-      		  if (el1[1]!==el2[1] && el2[1]!==el3[1]){
-		 	arr2.push(arr.join());
-		 	}
-        break;
-  			  case 4:
-  			  console.log('elements 4');
-     		el1 =arr[0].split('  ')
-			el2 =arr[1].split('  ')
-			el3 =arr[2].split('  ')
-			el4 =arr[3].split('  ')
-      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1]){
-		 	arr2.push(arr.join());
-		 	}
-        break;
-        		 case 5:
-  			  console.log('elements 5');
-     		el1 =arr[0].split('  ')
-			el2 =arr[1].split('  ')
-			el3 =arr[2].split('  ')
-			el4 =arr[3].split('  ')
-			el5 =arr[4].split('  ')
-      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1] && el4[1]!==el5[1]){
-		 	arr2.push(arr.join());
-		 	}
-        break;
-        		 case 6:
-  			  console.log('elements 6');
-     		el1 =arr[0].split('  ')
-			el2 =arr[1].split('  ')
-			el3 =arr[2].split('  ')
-			el4 =arr[3].split('  ')
-			el5 =arr[4].split('  ')
-			el6 =arr[5].split('  ')
-      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1] && el4[1]!==el5[1] && el5[1]!==el6[1]){
-		 	arr2.push(arr.join());
-		 	}
-        break;
-        		 case 7:
-  			  console.log('elements 7');
-     		el1 =arr[0].split('  ')
-			el2 =arr[1].split('  ')
-			el3 =arr[2].split('  ')
-			el4 =arr[3].split('  ')
-			el5 =arr[4].split('  ')
-			el6 =arr[5].split('  ')
-			el7 =arr[6].split('  ')
-      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1] && el4[1]!==el5[1] && el5[1]!==el6[1]&& el6[1]!==el7[1]){
-		 	arr2.push(arr.join());
-		 	}
-        break;
-        		 case 8:
-  			  console.log('elements 8');
-     		el1 =arr[0].split('  ')
-			el2 =arr[1].split('  ')
-			el3 =arr[2].split('  ')
-			el4 =arr[3].split('  ')
-			el5 =arr[4].split('  ')
-			el6 =arr[5].split('  ')
-			el7 =arr[6].split('  ')
-			el8 =arr[7].split('  ')
-      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1]&& el4[1]!==el5[1] && el5[1]!==el6[1]&& el6[1]!==el7[1]&& el7[1]!==el8[1]){
-		 	arr2.push(arr.join());
-		 	}
-        break;
-        		 case 9:
-  			  console.log('elements 9');
-     		el1 =arr[0].split('  ')
-			el2 =arr[1].split('  ')
-			el3 =arr[2].split('  ')
-			el4 =arr[3].split('  ')
-			el5 =arr[4].split('  ')
-			el6 =arr[5].split('  ')
-			el7 =arr[6].split('  ')
-			el8 =arr[7].split('  ')
-			el9 =arr[8].split('  ')
-      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1]&& el4[1]!==el5[1] && el5[1]!==el6[1]&& el6[1]!==el7[1]&& el7[1]!==el8[1]&& el8[1]!==el9[1]){
-		 	arr2.push(arr.join());
-		 	}
-        break;
-        		 case 10:
-  			  console.log('elements 10');
-     		el1 =arr[0].split('  ')
-			el2 =arr[1].split('  ')
-			el3 =arr[2].split('  ')
-			el4 =arr[3].split('  ')
-			el5 =arr[4].split('  ')
-			el6 =arr[5].split('  ')
-			el7 =arr[6].split('  ')
-			el8 =arr[7].split('  ')
-			el9 =arr[8].split('  ')
-			el10 =arr[9].split('  ')
-      		  if (el1[1]!==el2[1] && el2[1]!==el3[1] && el3[1]!==el4[1]&& el4[1]!==el5[1] && el5[1]!==el6[1]&& el6[1]!==el7[1]&& el7[1]!==el8[1]&& el8[1]!==el9[1]&& el9[1]!==el10[1]){
-		 	arr2.push(arr.join());
-		 	}
-        break;
-		}
-
-		
-		
-		}
-	}
-
-
-
-
-
-if (print) {
-	for (var i = 0; i < 30; i++) {
-	console.log(arr2[i]);
-}
-	var len = arr2.length;
-$('#result').text('Ти удължи съществуването на света с ' +len+ ' дни');
-print=false;
-}
-
-
-$('id').fadeIn(1000);
-});
-});
-
-
-
-	
-
+setTimeout(function(){
+   	 $("#story5").fadeIn(3000);
+        $("#story5").fadeOut(3000);
+ },48000);
+setTimeout(function(){
+   	 $("#story6").fadeIn(4000);
+        $("#story6").fadeOut(4000);
+ },57000);
+setTimeout(function(){
+   	 $("h3").fadeIn(10000);
+        $("h3").fadeOut(18000);
+ },66000);
+setTimeout(function(){
+window.location.href="game.html";
+ },103000);
 </script>
+
 </body>
 </html>
