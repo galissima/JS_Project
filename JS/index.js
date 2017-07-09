@@ -1,7 +1,7 @@
-<script type="text/javascript" >
-var temp =0;
-document.getElementById("sound").play(); 
 
+var temp =0;
+
+//document.getElementById("sound").play(); 
  $(document).ready(function(){
  	 $("h1").fadeIn(2000);
    	 $("#story1").fadeIn(13000);
@@ -45,4 +45,3 @@ setTimeout(function(){
 setTimeout(function(){
 window.location.href="game.html";
  },103000);
-</script>

@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>JS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-   <script src="jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+   <script src="JS/jquery-3.2.1.min.js"></script>
    <script src="JS/game.js"></script>
   
 </head>
@@ -27,16 +27,16 @@
 
 		<button>Изпълни!</button>
 
-		<div id='result'></div
+		<div id='result'></div>
 		<div class="lid"></div>
 		<div class ='magic'></div>
 		<div class ="fire"></div>
 
 <script type="text/javascript" >
+
 document.getElementById("music2").play();
 	var print = true;
 	var arr = [];
-	var arr2=[];
 	document.getElementById("fire").play(); 
 	$('.ingr').click(function (){
 		setTimeout(function(){
@@ -61,15 +61,18 @@ document.getElementById("music2").play();
 		var temp;
 		var el =[];
 		var myLen = arr.length;
-		var temp , el1 , el2 , el3 ,el4 , el5;
+		var temp , el1 , el2 , el3 ,el4 , el5, el6, el7, el8, el9, el10;
 		var arr2=[];
 
-		for (var i = 0; i < myLen*300; i++) {
+		for (var i = 0; i < myLen*400; i++) {
 			var rand=Math.floor(Math.random()*myLen);
 			var rand2=Math.floor(Math.random()*myLen);
 			temp = arr[rand2];
 			arr[rand2]=arr[rand];
 			arr[rand] = temp;
+
+			//recipe
+			
 		if (arr2.includes(arr.join())) {}
 			else{
 			
@@ -205,6 +208,9 @@ document.getElementById("music2").play();
 		$('id').fadeIn(1000);
 });
 });
+
+
+
 
 </script>
 </body>

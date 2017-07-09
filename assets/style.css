@@ -1,6 +1,6 @@
 body{
 	
-	background-image:url('assets/images/wood.jpg');
+	background-image:url('images/wood.jpg');
 	background-size: cover;
 	background-position: center bottom;
 	background-attachment: fixed;
@@ -95,7 +95,7 @@ text-shadow: 2px 2px blue;
 button{
 	    position: relative;
     top: 200px;
-    background-image: url(assets/images/button.gif);
+    background-image: url(images/button.gif);
     background-size: contain;
     background-color: rgba(25, 5, 1, 0);
     right: 0px;
@@ -106,59 +106,59 @@ button{
     height: 50px;
 }
 #cockroach {
-	background-image: url('assets/images/eye.png');
+	background-image: url('images/eye.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 
 
 }
 #tarantula{
-	background-image: url('assets/images/tarantula.png');
+	background-image: url('images/tarantula.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 #pirana{
-	background-image: url('assets/images/piranq.png');
+	background-image: url('images/piranq.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 #eye{
-	background-image: url('assets/images/lizzard.png');
+	background-image: url('images/lizzard.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 #apple{
-	background-image: url('assets/images/apple.png');
+	background-image: url('images/apple.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 #snail{
-	background-image: url('assets/images/unnamed.png');
+	background-image: url('images/unnamed.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 #hair{
-	background-image: url('assets/images/gligan.png');
+	background-image: url('images/gligan.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 #cockroach{
-	background-image: url('assets/images/cockroach.png');
+	background-image: url('images/cockroach.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 #teeths{
-	background-image: url('assets/images/cobra.png');
+	background-image: url('images/cobra.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 #scorpio{
-	background-image: url('assets/images/scorpio.png');
+	background-image: url('images/scorpio.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 #lizzard{
-	background-image: url('assets/images/liz.png');
+	background-image: url('images/liz.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -166,7 +166,7 @@ button{
 .magic{
 	width: 280px;
 	height: 150px;
-	background-image: url('assets/images/pan1.png');
+	background-image: url('images/pan1.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -179,7 +179,7 @@ button{
 .lid{
 	width:240px;
 	height:150px;
-	background-image: url('assets/images/pan2.png');
+	background-image: url('images/pan2.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -190,7 +190,7 @@ button{
 .fire{
     width: 400px;
     height: 150px;
-    background-image: url(assets/images/fire.gif);
+    background-image: url('images/fire.gif');
     background-size: contain;
     position: absolute;
     bottom: 0px;

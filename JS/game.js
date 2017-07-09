@@ -1,4 +1,4 @@
-<script type="text/javascript" >
+
 document.getElementById("music2").play();
 	var print = true;
 	var arr = [];
@@ -171,5 +171,3 @@ document.getElementById("music2").play();
 		$('id').fadeIn(1000);
 });
 });
-
-</script>
